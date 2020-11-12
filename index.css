@@ -39,6 +39,7 @@ nav {
 h2 {
   text-align: center;
   font-weight: bold;
+  font-size: 35px;
   padding: 25px;
 }
 
@@ -75,11 +76,18 @@ li {
   text-shadow: 2px 2px 5px #000000;
   font-family: "Times New Roman", Times, serif;
 }
+#about-me-heading {
+  background-color: silver;
+  margin-bottom: 0%;
+}
 
 .about {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  padding-bottom: 30px;
+  background-color: silver;
 }
 
 .pic {
@@ -92,7 +100,7 @@ li {
 }
 
 .details > pre {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .project-container {
@@ -115,8 +123,31 @@ li {
 }
 .project-detail {
   text-align: center;
+  font-size: 30px;
 }
 
+/* SKILLS */
+.skills-wrapper {
+  /* margin-left: 150px; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.skills > img {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.skills > img:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 5px #888888;
+}
 footer {
   background-color: black;
   color: white;
@@ -124,11 +155,14 @@ footer {
   text-align: center;
   font-size: 25px;
 }
-@media only screen and (min-width: 701px) {
-  .container {
+
+@media only screen and (min-width: 720px) {
+  .intro {
+    height: 60rem;
     width: 100%;
   }
 }
+
 @media only screen and (max-width: 700px) {
   .container {
     display: block;
@@ -143,8 +177,8 @@ footer {
     height: 30rem;
     width: 100%;
   }
-  .heading {
-    font-size: 25px;
+  .h1 {
+    font-size: 45px;
   }
   .about {
     /* text-align: center; */
@@ -171,9 +205,6 @@ footer {
 }
 
 @media only screen and (max-width: 360px) {
-  body {
-    background-color: teal;
-  }
   .main {
     display: flex;
     flex-wrap: wrap;
