@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 html,
 body {
@@ -60,7 +60,7 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 900px;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,7 +93,6 @@ li {
 
 .details > pre {
   font-size: 20px;
-  margin: 10px;
 }
 
 .project-container {
@@ -112,6 +111,7 @@ li {
 .project-img > img {
   width: 100%;
   height: 200px;
+  /* object-fit: cover; */
 }
 .project-detail {
   text-align: center;
@@ -124,7 +124,11 @@ footer {
   text-align: center;
   font-size: 25px;
 }
-
+@media only screen and (min-width: 701px) {
+  .container {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 700px) {
   .container {
     display: block;
@@ -168,7 +172,7 @@ footer {
 
 @media only screen and (max-width: 360px) {
   body {
-    /* background-color: teal; */
+    background-color: teal;
   }
   .main {
     display: flex;
